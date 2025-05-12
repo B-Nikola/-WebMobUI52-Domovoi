@@ -1,6 +1,5 @@
 # Goal of the project
 
-## Goal
 Learn to make the back and front end of an app.
 In my case I didn't had the classes for the back so it is emulated in the api.php where instead of request there is already the Json results.
 
@@ -16,33 +15,21 @@ Progression is saved at each steps taken
 
 
 
-# Manual for setting it up provided by the original project 
-# ✨ Laravel + Vue Fullstack Boilerplate ✨
+# Manual for setting it up copied and edited from the original project 
+original is : https://github.com/Chabloz/WebMobUI52-fullstack.git
 
-## 🎓 WebMobUi - Media Engineering - HEIG-VD 🎓
-
-This is a fullstack Laravel and Vue.js boilerplate designed for the course.
-
----
 
 ## ⚙️ Installation Steps ⚙️
 
 Follow these steps to get your project up and running:
 
-### 1. Create Project Folder 📁
-
-```bash
-mkdir YourAppName
-cd YourAppName
-```
-
-### 2. Clone Repository & Set Upstream 🔄
+### 1. Clone Repository & Set Upstream 🔄
 
 Clone the boilerplate repository and then point the remote origin to your own GitHub repository (make sure you create it on GitHub first!).
 
 ```bash
 # Clone the boilerplate
-git clone https://github.com/Chabloz/WebMobUI52-fullstack.git .
+git clone https://github.com/B-Nikola/-WebMobUI52-Domovoi .
 
 # Set your repository as the origin
 git remote set-url origin https://github.com/YourGitHubUsername/YourAppName.git
