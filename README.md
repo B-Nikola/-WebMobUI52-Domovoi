@@ -1,4 +1,22 @@
+# Goal of the project
 
+## Goal
+Learn to make the back and front end of an app.
+In my case I didn't had the classes for the back so it is emulated in the api.php where instead of request there is already the Json results.
+
+## Limits
+The app for a lack of inspiration took the idea of the matrix and a lot of small interactions could have been added but the core of what is required is present.
+The story was cowritten by ChatGPT and for a lack of imagination and time the images are from an API to get something on the screen other than text for the sake of learning how to do this. 
+This allow for multiple interpretation of the story for the player. 
+
+## How to play
+To play it you simply can click the different options presented or type in partially the answers to give a better simulation of the terminal.
+The story has some problems where you get sent back to the start and this in the end is close to a soft reset.
+Progression is saved at each steps taken
+
+
+
+# Manual for setting it up provided by the original project 
 # ✨ Laravel + Vue Fullstack Boilerplate ✨
 
 ## 🎓 WebMobUi - Media Engineering - HEIG-VD 🎓

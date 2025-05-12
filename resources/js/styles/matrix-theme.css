@@ -1,0 +1,187 @@
+/* MATRIX THEME - Shared styles */
+
+/* --- Colors and Base Styling --- */
+.matrix-theme {
+  background-color: #000;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Text Styling --- */
+.terminal-text {
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+}
+
+.console-path {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.console-text {
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.terminal-glow {
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+/* --- Card Styling --- */
+.matrix-card {
+  background-color: #0a0a0a;
+  border: 1px solid #00ff00;
+  box-shadow: 0 0 10px #00ff00;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.terminal-header {
+  border-bottom: 1px solid #00ff00;
+}
+
+/* --- Button Styling --- */
+.matrix-btn {
+  border: 1px solid #00ff00;
+  background-color: rgba(0, 255, 0, 0.1);
+  transition: all 0.3s;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+}
+
+.matrix-btn:hover {
+  background-color: rgba(0, 255, 0, 0.2);
+  box-shadow: 0 0 15px #00ff00;
+}
+
+/* --- Input Styling --- */
+.terminal-input-section {
+  margin-top: 20px;
+  border-top: 1px solid #00ff00;
+  padding-top: 20px;
+}
+
+.console-prompt {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.terminal-input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  caret-color: #00ff00;
+  outline: none;
+  padding: 5px;
+}
+
+.terminal-input::placeholder {
+  color: rgba(0, 255, 0, 0.5);
+}
+
+/* --- Image Styling --- */
+.matrix-image {
+  border: 1px solid #00ff00;
+}
+
+.image-section {
+  animation: fadeInGlow 1s forwards;
+}
+
+/* --- Loading & Error States --- */
+.matrix-error {
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid #ff0000;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.matrix-loading {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.terminal-error-message {
+  color: #ff0000;
+  font-family: 'Courier New', monospace;
+  margin-top: 8px;
+  text-align: center;
+  animation: blink 1s infinite;
+}
+
+/* --- Animation Elements --- */
+.animated-text {
+  display: inline-block;
+  position: relative;
+}
+
+.ready-to-animate {
+  border-right: .15em solid #00ff00;
+}
+
+.animation-complete {
+  border-right: none;
+}
+
+.code-line {
+  height: 4px;
+}
+
+/* --- Shared Animation Keyframes --- */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+@keyframes fadeInGlow {
+  0% { 
+    opacity: 0; 
+    filter: brightness(0);
+  }
+  50% {
+    filter: brightness(2);
+  }
+  100% { 
+    opacity: 1; 
+    filter: brightness(1);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slowBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes rain {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100px; }
+}
